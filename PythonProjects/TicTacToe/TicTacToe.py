@@ -110,5 +110,7 @@ while turn_number < 9:
 
 if turn_number == 9:
     print("Tied game.")
+else:
+    print("The winner was" , turn)
 
-print("The winner was" , turn)
+    
