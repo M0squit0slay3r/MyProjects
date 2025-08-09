@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!--you can use MDN for more info and search purposes-->
+<!--fontawesome.com + googlefonts-->
+<!-- when you type ! + tab in vscode you get the base of html ready-->
+<html lang="en">
+<head>
+        <!--meta tags informs web browser-->
+        <meta charset="utf-8">
+        <meta name="description" content="Free Html tutorial for beginners">
+        <meta name="keywords" content="Html,tutorial,beginners">
+        <meta name="author" content="Bro Code">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="30">
+        <title>Shadow_the_Hedgehog </title>
+        <link rel="stylesheet" href="index.css"> <!--external example-->
+        <style>                          
+            h1{
+                color:red
+            }
+        </style> <!--internal example-->
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<!--
+ ways to use css
+    1.Inline (style="")
+    2.Internal (within the head) for example: <style>
+                                                body{
+                                                    background-color: white;                                    
+                                                }    
+                                            </style>       
+    3.External(everything in a css file and you link to original html file)
+-->
+
+<body>
+    <h1 id="pizza">like pizza</h1> 
+    <hr> <!-- horizontal rule-->
+    <p style="background-color: #3b8b3f">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque rem eos minima, dolor magni veritatis vero error atque sit ab laborum quod nulla, temporibus voluptatum! Culpa quo ducimus dolores vitae.</p>
+    <br> <!--break basically giving space-->
+    <!--span = adds markup to text or portion of a doc-->
+    <p><span style="color:red">Lorem, ipsum dolor sit amet </span> adipisicing elit. Quas exercitationem nam quidem animi dolorum facilis repellat aspernatur! Qui excepturi praesentium, eligendi officia animi perferendis laudantium debitis dolores consectetur dicta reiciendis!</p>
+    <a href="page2.html" target="_blank" title="this takes you to google">Go to page 2</a> <!--hyper link target="where the link will open by default _self"-->
+    <a href="https://sonic.fandom.com/wiki/Shadow_the_Hedgehog" target="_blank">
+    <img id="shadow" src="images/shadow.jpg" alt="picture of shadow from sonic" title="shadow being cutie"> <!--alt attribute is alternative text for screen reader-->        
+    </a>
+    <audio controls autoplay muted loop src="Jumpin Off - Surf Ninja 3.mp3"> <!--controls is a boolean attribute-->>
+    </audio>   
+    <!--in case audios are in different format -->
+    <audio controls autoplay muted loop>
+        <source src="Jumpin Off - Surf Ninja 3.mp3">
+        <source src="Jumpin Off - Surf Ninja 3.wav">
+        This browser does not support HTML5 audio 
+    </audio>   
+    <!--when adding video we need these types mp4 , webM, Ogg-->
+    <video controls src="" width="500"> <!--controls , autoplay ,muted,loop are boolean attributes-->
+    </video>
+    <p id="bold">normal text</p>
+    <p><b>bold</b> text</p>
+    <p><i>italic</i> text</p>
+    <p><small>small</small> text</p>
+    <p><big>big</big> text</p>
+    <p><sub>subscript</sub> text</p>
+    <p><sup>superscript</sup> normal text</p>
+    <p><ins>inserted</ins> text</p>
+    <p><del>deleted</del> text</p>
+    <p><mark>marked</mark> text</p>
+
+    <div id="boxx">Hi</div>
+
+    <h4>Unordered List</h4>
+        <ul>
+            <li>pizza dough</li> <!--individual list items-->
+            <li>tomato</li>
+            <li>cheese</li>
+            <li>toppings</li>
+                <ul><li>definitely not olives</li>
+                </ul>
+        </ul>
+
+    <h4>Ordered List</h4>
+    <ol type="A">
+        <li>eat breakfast</li>
+        <li>brush your teeth</li>
+        <li>take a shower </li>
+    </ol>
+
+    <h4>Description List</h4>
+    <dl>
+        <dt>HTML</dt> <!--description term-->
+        <dd>This adds structure/bone to a webpage</dd> <!--description definition-->
+    </dl>
+        
+    <h3>Store Hours</h3>
+    <table bgcolor="black" width="700">
+        <tr bgcolor="grey"><!--table rows bgcolor="background color"-->
+            <th width="100">Sunday</th> <!--table header-->
+            <th width="100">Monday</th>
+            <th width="100">Tuesday</th>
+            <th width="100">Wednesday</th>
+            <th width="100">Thursday</th>
+            <th width="100">Friday</th>
+            <th width="100">Saturday</th>
+        </tr> 
+        <tr bgcolor="lightgrey" align="center">
+            <td>Closed</td> <!--table data-->
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>Closed</td>
+
+        <h1 style="color: red">Hello World</h1>
+        <h1 style="color:rgb(5,240,230)">Hello World</h1>
+        <h1 style="color:#28ff05">Hello World</h1>
+        </tr>
+    </table>
+    <div style="background-color:pink">
+    <p id="p1" class="odd">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Animi totam addignissimpend, ssutio illum dolorum nobis non? Commodi?</p>
+    <p class="odd">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Animi totam addignissimpend, ssutio illum dolorum nobis non? Commodi?</p>
+    <p id="p3">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Animi totam addignissimpend, ssutio illum dolorum nobis non? Commodi?</p>
+    </div>
+    <!--div = defined division of a document-->
+        
+    <!-- iframe = embed content from another source into an HTML document 
+                ex. used for ads,used in many hacking techniques-->
+    <iframe src="ad.html" width="700" height="200" style="border:0;"></iframe>
+
+    <a href="https://www.google.com">
+        <button style="background-color:rgb(54, 45, 200); color:#00ff00; border-radius: 5px;">Click Me</button>
+    </a>
+     
+    <!--lil javascript example-->
+    <button onclick="doSomething()" style="background-color: cyan;color: black">CliCk</button>
+    
+    <p id="test">Hello</p>
+
+    <script>
+        function doSomething(){
+            document.getElementById("test").innerHTML ="Goodbye"
+        }
+    </script>
+    <!--iki tür method var get methodu bilgileri urlye yazar o yuzden search engine icin kullanilir
+    post method password gibi seylerde-->
+    <form action="action_page.php" method="post"> 
+        <!--name is to name the entered data , for and id are used for people who use screenreader-->
+        <div>
+            <label for="fname">first name:</label>
+            <input type="text" id="fname" name="fname" placeholder="i hope you know your name" required>
+        </div>
+
+        <br>
+        <div>
+            <label for="lname">last name:</label>
+            <input type="text" id="lname" name="lname" placeholder="lastname pls." required>
+        </div>    
+
+        <div>
+            <label for="pass">password:</label>
+            <input type="password" id="pass" name="pass" maxlength="12" placeholder="i hope you know your name" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" placeholder="yourmail@gmail.com">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="phone">phone #:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+49 0000 0000 00 ">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="bdate">bday:</label>
+            <input type="date" id="bdate" name="bdate">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="quantity">quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="99" value="1">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="title">title:</label>
+
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." name="title">
+
+            <label for="Mrs.">Mrs.</label>
+            <input type="radio" id="Mrs." name="title">
+
+            <label for="PhD.">PhD.</label>
+            <input type="radio" id="PhD." name="title">
+
+        </div>
+        
+        <br>
+
+        <div>
+            <label for="payment">payment:</label>
+            <select id="payment" name="payment">
+                <option value="visa">visa</option>
+                <option value="mastercard">mastercard</option>
+                <option value="giftcard">giftcard</option>
+            </select>
+        </div>
+            
+        <br>
+
+        <div>
+            <label for="sub">subscribe!</label>
+            <input type="checkbox" id="sub" name="sub">
+        </div>
+        
+        <br>
+
+        <div>
+            <input type="reset">
+        </div>
+
+        <br>    
+
+        <div>
+            <input type="submit">
+        </div>
+        
+    </form>
+
+    <!-- margin = space Around an element-->
+     <div id="box1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, expedita! Ducimus dolor eos mollitia quibusdam aperiam facilis non nesciunt laborum voluptate eligendi, doloribus sunt provident recusandae repellendus neque illum ipsum!</div>
+     
+     <div id="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit unde itaque quo ipsum maiores assumenda, voluptas explicabo aliquid cum alias odio dolorem ea obcaecati voluptatibus voluptates nemo reiciendis suscipit molestias.</div>
+     
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vero doloremque fuga pariatur dignissimos ipsam aliquid harum dolorem facilis eligendi consequuntur voluptatem cupiditate provident temporibus blanditiis sed perferendis, odio corrupti!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et facere ab totam, neque natus tempore cum officiis modi numquam asperiores qui ipsa, alias, sint hic. Iste adipisci officiis animi sint.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et facere ab totam, neque natus tempore cum officiis modi numquam asperiores qui ipsa, alias, sint hic. Iste adipisci officiis animi sint.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et facere ab totam, neque natus tempore cum officiis modi numquam asperiores qui ipsa, alias, sint hic. Iste adipisci officiis animi sint.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et facere ab totam, neque natus tempore cum officiis modi numquam asperiores qui ipsa, alias, sint hic. Iste adipisci officiis animi sint.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et facere ab totam, neque natus tempore cum officiis modi numquam asperiores qui ipsa, alias, sint hic. Iste adipisci officiis animi sint.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et facere ab totam, neque natus tempore cum officiis modi numquam asperiores qui ipsa, alias, sint hic. Iste adipisci officiis animi sint.</p>
+
+    <div id="box3">
+            <div id="box4"></div>
+        </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et facere ab totam, neque natus tempore cum officiis modi numquam asperiores qui ipsa, alias, sint hic. Iste adipisci officiis animi sint.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et facere ab totam, neque natus tempore cum officiis modi numquam asperiores qui ipsa, alias, sint hic. Iste adipisci officiis animi sint.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et facere ab totam, neque natus tempore cum officiis modi numquam asperiores qui ipsa, alias, sint hic. Iste adipisci officiis animi sint.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et facere ab totam, neque natus tempore cum officiis modi numquam asperiores qui ipsa, alias, sint hic. Iste adipisci officiis animi sint.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et facere ab totam, neque natus tempore cum officiis modi numquam asperiores qui ipsa, alias, sint hic. Iste adipisci officiis animi sint.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et facere ab totam, neque natus tempore cum officiis modi numquam asperiores qui ipsa, alias, sint hic. Iste adipisci officiis animi sint.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et facere ab totam, neque natus tempore cum officiis modi numquam asperiores qui ipsa, alias, sint hic. Iste adipisci officiis animi sint.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et facere ab totam, neque natus tempore cum officiis modi numquam asperiores qui ipsa, alias, sint hic. Iste adipisci officiis animi sint.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et facere ab totam, neque natus tempore cum officiis modi numquam asperiores qui ipsa, alias, sint hic. Iste adipisci officiis animi sint.</p>
+
+    <a href="https://www.google.com">Google.com</a>
+
+    <button>Do NoT Press</button>
+
+    <ul>
+        <li>This is element #1</li>
+        <li>This is element #2</li>
+        <li id="element">This is element #3</li>
+        <li>This is element #4</li>
+        <li>This is element #5</li>
+        <li>This is element #6</li>
+        <li>This is element #7</li>
+        <li>This is element #8</li>
+        <li>This is element #9</li>
+        <li>This is element #10</li>
+    </ul>
+
+</body>
+</html>     

@@ -1,0 +1,204 @@
+body {
+  background-image: url(images/shadow-on-skate.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  background: linear-gradient(to left, rgb(93, 39, 39), gray);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#p1 {
+  font-size: larger;
+}
+
+.odd {
+  color: blue;
+  font-family: "consolas", sans-serif, system-ui;
+  /* you can look how different fonts looks on screen at fonts.google.com*/
+}
+
+#p3 {
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: bold;
+  text-decoration: dotted underline;
+  font-style: normal;
+  font-size: 18px;
+  border-style: inset;
+  border-width: 5px;
+  border-color: gold;
+  border-radius: 10px; /*the higher the number the smoother is the rounding*/
+  padding: 5px; /*padding is space between content and border*/
+}
+
+#box1 {
+  border: 5px solid;
+  width: 250px;
+  height: 250px;
+  font-size: 22px;
+  background: greenyellow;
+  padding: 50px;
+  margin-top: 50px;
+  margin-left: 50%;
+}
+#box2 {
+  border: 5px solid;
+  width: 250px;
+  height: 250px;
+  font-size: 22px;
+  background: dodgerblue;
+  margin-right: auto;
+  margin-left: auto;
+  /*margin is space around the element*/
+}
+/*wrapping elements around images*/
+/*positions an element to the left or right side of a container*/
+#shadow {
+  float: left;
+}
+/*when you dont want it to float u use clear*/
+#bold {
+  clear: left;
+}
+
+#box3 {
+  border: 1px solid;
+  height: 300px;
+  width: 300px;
+  background-color: skyblue;
+
+  position: relative; /*fixed = will stick to the viewport*/
+  /*sticky = will stick to viewport when you scroll pass it */
+  /*top:0px and bottom:0px for example */
+  top: 150px;
+  left: 150px;
+}
+#box4 {
+  border: 1px solid;
+  height: 100px;
+  width: 100px;
+  background-color: tomato;
+
+  position: absolute; /*searches for a parent that is not static*/
+
+  top: 100px;
+  left: 100px;
+}
+
+/*pseudo-class: a keyword added to a selector that specifies
+ a special state of the selected element(s)*/
+a:link {
+  color: rgb(195, 255, 0);
+}
+
+a:visited {
+  color: chartreuse;
+}
+
+a:hover {
+  color: aqua;
+}
+
+a:active {
+  color: darkviolet;
+}
+
+button:hover {
+  background-color: lightgray;
+}
+
+button:active {
+  background-color: white;
+}
+
+/* li:nth-child(1){
+    background-color: yellow;
+}
+*/
+
+li:nth-child(3n) {
+  background-color: brown;
+}
+
+#element {
+  text-shadow: 0px 0px 5px yellow, 0px -5px 5px red;
+}
+
+#element:hover {
+  box-shadow: 5px -5px 5px white;
+}
+
+#pizza {
+  border: 4px solid;
+
+  transform: rotateX(180deg);
+  transform: translate(50px, 50px);
+}
+
+#boxx {
+  width: 250px;
+  height: 250px;
+  background-color: red;
+  font-size: 225px;
+  text-align: center;
+  /*
+    animation: mySlide;
+    animation-play-state: running;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-duration: 5s;
+    the shortcut of all these is below 
+    */
+  animation: 3s linear 0s infinite running myColorChange;
+}
+/*animation*/
+@keyframes mySlide {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes myRotation {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes myOpacity {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes myScale {
+  50% {
+    transform: scale(0.5, 0.5);
+  }
+}
+
+@keyframes myColorChange {
+  20% {
+    background-color: orange;
+  }
+  40% {
+    background-color: yellow;
+  }
+  60% {
+    background-color: green;
+  }
+  80% {
+    background-color: blue;
+  }
+  100% {
+    background-color: purple;
+  }
+}
